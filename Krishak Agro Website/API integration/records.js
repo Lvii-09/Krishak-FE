@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             myHeaders.append("USER_EXTERNAL_ID", localStorage.getItem('userExternalId'));
             myHeaders.append("Content-Type", "application/json");
 
-            fetch('http://localhost:8080/stat/daily', {
+            fetch('http://13.60.86.153:8080/stat/daily', {
                 method: 'POST',
                 headers: myHeaders,
                 body: JSON.stringify(data)
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const myHeaders = new Headers();
         myHeaders.append("USER_EXTERNAL_ID", localStorage.getItem('userExternalId'));
 
-        fetch("http://localhost:8080/stat/daily/fetch", {
+        fetch("http://13.60.86.153:8080/stat/daily/fetch", {
             method: "GET",
             headers: myHeaders,
             redirect: "follow"
