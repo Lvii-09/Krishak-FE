@@ -21,7 +21,7 @@ event.preventDefault(); // Prevent default form submission
             redirect: "follow"
         };
 
-        const url = `http://localhost:8080/info/user?phoneNumber=${phoneNumber}`;
+        const url = `http://13.60.86.153:8080/info/user?phoneNumber=${phoneNumber}`;
 
         fetch(url, requestOptions)
             .then(response => {
