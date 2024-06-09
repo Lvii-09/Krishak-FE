@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
             phoneNumber: document.getElementById('mobileNumber').value
         });
 
-        fetch('http://localhost:8080/info/cattle', {
+        fetch('http://13.60.86.153:8080/info/cattle', {
             method: 'POST',
             headers: myHeaders,
             body: raw
