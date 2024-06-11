@@ -98,11 +98,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const raw = JSON.stringify({
             "phone_number": phoneNumber,
-            "password": password,
-            "confirm_password": confirmPassword
+            "password": password
+            // "confirm_password": confirmPassword
         });
 
-        fetch('http://13.60.86.153:8080/sign-up', {
+        fetch('http://51.20.67.103:8080/sign-up', {
             method: 'POST',
             headers: myHeaders,
             body: raw
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "password": password
         });
 
-        fetch('http://13.60.86.153:8080/log-in', {
+        fetch('http://51.20.67.103:8080/log-in', {
             method: 'POST',
             headers: myHeaders,
             body: raw
